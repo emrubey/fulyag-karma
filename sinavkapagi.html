@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="alternate" type="application/rss+xml" title="#" href="#" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/_mobile.css" type="text/css" media="all" />
+
+
+<!-- Color Scheme CSS -->
+<link rel="stylesheet" href="css/karma-political-blue.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/secondary-political-blue.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/_font-awesome.css" type="text/css" media="all" />
+
+    <meta charset="utf-8">
+    <title>sinavkapak</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body style="background-image:linear-gradient(to right, #262261, #262261)">
+<div class="" align="center">
+
+
+     <form action="http://95.85.58.57:4000/mail_service/sendmail" method="post" id="sinavkapak" style="align:center">
+      <a href="index.php"> <img class="img-responsive" src="img/ikklogo4.png"></a>
+         <label for="name"><h1 style="font-size:20px; font-family:candara; font-style:italic; color:white">İZMİR İNGLİZ KÜLTÜR OKULLARI</h1></label>
+<br><br>
+         <div class="form-group"  style="margin-top:-10px">
+           <label for="name"><h2 style="font-size:20px; font-family:candara; font-style:italic; color:white"> sınav adı:</h2></label>
+         </div>
+       <div class="form-group"  style="margin-top:-10px">
+         <label for="email"><h2 style="font-size:20px; font-family:candara; font-style:italic; color:white">sınav saati:</h2></label>
+       </div>
+       <div class="form-group" style="margin-top:-10px">
+         <label for="gsm"><h2 style="font-size:20px; font-family:candara; font-style:italic; color:white">Sınıf:</h2></label>
+       </div>
+       <div class="form-group"  style="margin-top:-10px">
+         <label for="name"><h2 style="font-size:20px; font-family:candara; font-style:italic; color:white">sınav süresi</h2> </label>
+       </div>
+       <button id="onkayitsubmit" style ="float:;" class="ka_button medium_button medium_cherry"><b>Sınava Başla</b></button>
+   </form>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script>
+        // wait for the DOM to be loaded
+        $(document).ready(function() {
+            // bind 'myForm' and provide a simple callback function
+            var $body=$('body')
+
+            $('#onkayitform').on("submit",function(){
+              $body.addClass("loading")
+            })
+
+            $('#onkayitform').ajaxForm(function() {
+              $body.removeClass("loading")
+                alert("Teşekkürler.Kaydınız Alınmıştır. En kısa sürede size dönüş yapacağız");
+            });
+        });
+    </script>
+  </body>
+</html>

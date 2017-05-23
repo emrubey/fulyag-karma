@@ -1,0 +1,30 @@
+[
+  {
+
+	"baslik": "Engelleri Kaldırıyoruz",
+	"ozet":"Engelleri Kaldırıyoruz projemiz kapsamında okulumuzda kermeslerimizi düzenledik. Öğrencilerimizin katılımıyla 4 adet sandelye ihtiyaç sahiplerine ulaşmış oldu. Tüm öğrenci ve velilerimize teşekkür ediyoruz.",
+  "url":"engellerikaldir",
+  "resim":"img/haberengellerikaldir3.png"
+},
+
+{
+
+  "baslik": "Kitap Okuyoruz",
+  "ozet":"Tüm Öğretmenlerimiz ve Öğrencilerimiz ile her gün okuma saatleri düzenliyoruz.",
+  "url":"kitapokuyoruz",
+  "resim":"img/haberkitapokuma.jpg"
+},
+{
+
+  "baslik": "Sınıf Kahvaltılarımız Düzenlendi",
+	"ozet":"Öğrencilerimiz ve Velilerimiz ile birlikte sınıf kahvaltılarımızı düzenliyoruz.Tüm veli ve ogrencilerimizle guzel bir pazar sabahini yasadigimiz bu kahvaltida istenilen bir kaynasma ortami saglanmis oldu.Programimiza katilan tum veli ve ogrencilerimize tesekkur ederiz.",
+  "url":"sinifkahvaltilari",
+  "resim":"img/haberkahvalti1.png"
+},
+{
+  "baslik": "Sağlıklı Yaşam İçin...",
+	"ozet":"Bu sefer ki bisiklet turumuz sağlıklı bir yaşam için. Okulumuzun öğrencileri ile birlikte düzenlemiş olduğumuz Yeşilay Haftası kapsamında bisim bisiklet turu etkinliğimizi düzenledik.Katılan tüm öğrencilerimize teşekkür ederiz..",
+  "url":"bisikletturu",
+  "resim":"img/haberbisiklet.jpg"
+}
+]

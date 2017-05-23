@@ -1,0 +1,15 @@
+[
+ {
+	"baslik": "Bowling",
+	"ozet":"Öğrencilerimiz ile ayda 2 kez çeşitli etkinliklerimiz düzenlenmektedir. Etkinliklerimizde ingilizce eğitimlerimiz devam etmektedir. Mart Ayı ilk etkinliğimiz Öğrencilerimiz ile bowling oynadık..",
+  "url":"bowling",
+  "resim":"img/etkinlikbowling.png"
+ },
+
+ {
+  "baslik": "Olimpik Havuz",
+  "ozet":"Öğrencilerimiz ile ayda 2 kez çeşitli etkinliklerimiz düzenlenmektedir. Etkinliklerimizde ingilizce eğitimlerimiz devam etmektedir. Mart Ayı ilk etkinliğimiz Öğrencilerimiz ile olimpik havuzda doyasıya eğlendik.",
+  "url":"olimpikhavuz",
+  "resim":"img/etkinlikolimpikhavuz.png"
+ }
+]
