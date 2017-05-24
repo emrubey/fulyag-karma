@@ -61,19 +61,6 @@
 			       <div class="main-area">
                   <div class="tools">
 					   <span class="tools-top"></span>
-					   <div class="frame">
-						  <!-- <h1>Archive for 'Events'</h1> -->
-						  <h1><a href="index.html">Admin </a><span class='current_crumb'>&nbsp;&nbsp; Ürün Ekleme </span></h1>
-						  <form role="search" method="get" action="http://truethemesdemo.net/_HTML/Karma/template-blog.html" class="search-form">
-							 <fieldset>
-								<label for="s">Search this website</label>
-								<span class="text">
-								<input type="text" name="s" class="s" id="s" value="Search" onfocus="this.value=(this.value=='Search') ? '' : this.value;" onblur="this.value=(this.value=='') ? 'Search' : this.value;" />
-								<input type="submit" value="search" class="searchsubmit" />
-								</span>
-							 </fieldset>
-						  </form>
-					   </div><!-- END frame -->
 
 					   <span class="tools-bottom"></span>
 					</div><!-- END tools -->
@@ -83,13 +70,69 @@
               <a href="" title="Posts by TrueThemes" rel="author"></a>
              </div><!-- END post_title -->
 
-             <div class="post_content" align="center">
-              <div class="modern_img_frame tt-blog-featured">
-               <div class="img-preload">
-                <a href='' title='' class='attachment-fadeIn'><img src='img/misyonumuz.jpg' width='538' height='218' alt='' /></a>
-               </div><!-- END img-preload -->
-              </div><!-- END post_thumb -->
-              </div><!-- END post_content -->
+
+             <div class="tabs-area">
+                <ul class="tabset">
+                   <li><a href="#tab-1" class="tab"><span>Ürün Ekleme</span></a></li>
+                   <li><a href="#tab-2" class="tab"><span>Haber Ekleme</span></a></li>
+                </ul>
+
+                <div id="tab-1" class="tab-box">
+                
+
+                  <div class="form-group row"  style="margin-top:-10px">
+                        <div class="col-md-4">
+                        <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Marka Seç:</h4></label></div>
+                        <div class="col-md-4">
+                        <select class="from-control" name="kampus" style="margin-left:30px">
+                          <option value="kategori1">marka1ismi</option>
+                          <option value="kategori2">marka2</option>
+                        </select></div>
+                        <div class="col-md-4" align="right">
+                        <button type="button" name="button">Marka Ekle</button>
+                      </div>
+                    </div>
+                  <div class="form-group row"  style="margin-top:-10px">
+                        <div class="col-md-4">
+                        <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Kategori Seç:</h4></label></div>
+                        <div class="col-md-4">
+                        <select class="from-control" name="kampus" style="margin-left:30px">
+                          <option value="kategori1">kategori1ismi</option>
+                          <option value="kategori2">kategori2</option>
+                        </select></div>
+                        <div class="col-md-4" align="right">
+                        <button type="button" name="button">Kategori Ekle</button>
+                      </div>
+                    </div>
+                      <div  style="margin-top:-10px">
+                            <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Ürün Adı:</h4></label>
+                            <input name="urun_adi" type="text" class="form-control" id="product_name">
+                           <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Ürün Açıklaması:</h4></label>
+                           <input name="urun_aciklama" type="text" class="form-control" id="product_description">
+                           <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
+                           <input name="resim" type="file" id="product_image">
+                     </div>
+                </div>
+                <div id="tab-2" class="tab-box">
+                  <div  style="margin-top:-10px">
+                        <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Haber Adı:</h4></label>
+                        <input name="haber_adi" type="text" class="form-control" id="news_name">
+                       <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Haber Metni:</h4></label>
+                       <input name="haber_aciklama" type="text" class="form-control" id="news_description">
+                       <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
+                       <input name="resim" type="file" id="news_image">
+                 </div>
+                </div>
+             </div>
+
+
+
+
+
+
+
+
+
                </main><!-- END main #content -->
                <!-- END sidebar -->
             </div><!-- END main-area -->
