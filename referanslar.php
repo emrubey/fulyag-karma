@@ -40,7 +40,6 @@
 <link rel="stylesheet" href="css/_font-awesome.css" type="text/css" media="all" />
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,67 +52,91 @@
 </script>
 </head>
 <body>
-<?php include('scripts.php');?></div>
-   <div id="tt-wide-layout" class="content-style-default" >
+   <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">
         <div class="header"><?php include('header.html');?></div>
 
          <!-- ***************** - Main Content Area - ***************** -->
-         <div id="main" class="tt-slider-karma-custom-jquery-1">
-            <div class="main-area">
-              <!-- ////////////////////////////////////////////////////////// -->
-              <!-- ***************** - Content Start Here - ***************** -->
-              <!-- ////////////////////////////////////////////////////////// -->
-               <div class="jquery1-slider-wrap flexslider">
-                  <ul class="slides">
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider11.jpg" width="1204" height="556" alt="" />
-                    </li>
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider12.jpg" width="1204" height="556" alt="" />
-                    </li>
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider13.jpg" width="1204" height="556" alt="" />
-                    </li>
-                  </ul>
-               </div><!-- END jquery1-slider-wrap -->
-<br>
-               <main role="main" id="content" class="content_full_width" style="width:980px">
+         <div id="main" class="tt-slider-">
+			       <div class="main-area">
+                  <div class="tools">
+					   <span class="tools-top"></span>
+					   <div class="frame">
+						  <!-- <h1>Archive for 'Events'</h1> -->
+						  <h1><a href="index.html">Referasnlarımız </a><span class='current_crumb'>&nbsp;&nbsp; </span></h1>
+						  <form role="search" method="get" action="http://truethemesdemo.net/_HTML/Karma/template-blog.html" class="search-form">
+							</form>
+					   </div><!-- END frame -->
 
+					   <span class="tools-bottom"></span>
+					</div><!-- END tools -->
 
-                 <h6 class="heading-horizontal" style="margin:50px 0 50px 0;"><span>Haber ve Duyurular</span></h6>
-               <div class="blog-posts-shortcode-outer-wrap">
-                  <div class="one_half tt-column">
-                     <img id="haber1resim" alt="" />
-                     <h4 id="haber1baslik"></h4>
-                     <p id="haber1ozet"></p>
-                     <a id="haber1url" href="#">Devamı</a>
-                  </div>
-                  <div class="one_half_last tt-column">
+          <main role="main" id="content" class="content_full_width">
+             <div class="post_title">
+              <a href="" title="Posts by TrueThemes" rel="author"></a>
+             </div><!-- END post_title -->
 
-                     <img id="haber2resim" alt="" />
-                     <h4 id="haber2baslik"></h4>
-                     <p id="haber2ozet"></p>
-                     <a id="haber2url" href="#">Devamı</a>
-                  </div>
-               </div>
+             <div class="one_third ">
+                <div class="modern_three_col_large" style="height:150px">
+                      <a href='img/referanslar/abalioglu.jpg' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
+                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
+                         <img class='tt-fadein' src='img/referanslar/abalioglu.jpg'alt='' />
+                      </a>
+                </div><!-- END image_frame -->
+                <div class="portfolio_content">
+                   <h3>Abalıoğlu Yem A Ş</h3>
+                </div><!-- END portfolio_content -->
+             </div><!-- END column -->
+             <div class="one_fourth ">
+                <div class="modern_three_col_large" style="height:150px">
+                      <a href='img/referanslar/afz.png' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
+                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
+                         <img class='tt-fadein' src='img/referanslar/afz.png'alt='' />
+                      </a>
+                </div><!-- END image_frame -->
+                <div class="portfolio_content">
+                   <h3>AFZ Tekstil A Ş</h3>
+                </div><!-- END portfolio_content -->
+             </div><!-- END column -->
 
-               <br class="clear" />
-
-             </div>
-
-
-
-
-                  <!-- ////////////////////////////////////////////////////////// -->
-                  <!-- ***************** - Content Ends Here - ****************** -->
-                  <!-- ////////////////////////////////////////////////////////// -->
-
-
+             <div class="one_fourth ">
+                <div class="modern_three_col_large" style="height:150px">
+                      <a href='img/referanslar/ajan.png' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
+                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
+                         <img class='tt-fadein' src='img/referanslar/ajan.jpg'alt='' />
+                      </a>
+                </div><!-- END image_frame -->
+                <div class="portfolio_content">
+                   <h3>Ajan elektronik Ltd Şti</h3>
+                </div><!-- END portfolio_content -->
+             </div><!-- END column -->
+             <div class="one_fourth ">
+                <div class="modern_three_col_large" style="height:150px">
+                      <a href='img/referanslar/akon.png' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
+                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
+                         <img class='tt-fadein' src='img/referanslar/akon.png'alt='' />
+                      </a>
+                </div><!-- END image_frame -->
+                <div class="portfolio_content">
+                   <h3>Akon Hidrolik A Ş</h3>
+                </div><!-- END portfolio_content -->
+             </div><!-- END column -->
+             <div class="one_fourth ">
+                <div class="modern_three_col_large" style="height:150px">
+                      <a href='img/referanslar/al-celik.png' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
+                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
+                         <img class='tt-fadein' src='img/referanslar/al-celik.png'alt='' />
+                      </a>
+                </div><!-- END image_frame -->
+                <div class="portfolio_content">
+                   <h3>Al-Çelik A Ş</h3>
+                </div><!-- END portfolio_content -->
+             </div><!-- END column -->
 
 
 
                </main><!-- END main #content -->
+               <!-- END sidebar -->
             </div><!-- END main-area -->
 
          <div id="footer-top">&nbsp;</div>
@@ -121,13 +144,14 @@
 
 
 
-
          <!-- ***************** - Footer Starts Here - ***************** -->
          <div class="footer"><?php include('footer.html');?></div>
 
-
 </div><!-- END wrapper -->
 </div><!-- END tt-layout -->
+
+
+
 
 <!-- ***************** - JavaScript Starts Here - ***************** -->
 <script type="text/javascript" src="js/custom-main.js"></script>

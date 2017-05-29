@@ -40,7 +40,6 @@
 <link rel="stylesheet" href="css/_font-awesome.css" type="text/css" media="all" />
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -53,54 +52,63 @@
 </script>
 </head>
 <body>
-<?php include('scripts.php');?></div>
-   <div id="tt-wide-layout" class="content-style-default" >
+   <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">
         <div class="header"><?php include('header.html');?></div>
 
          <!-- ***************** - Main Content Area - ***************** -->
-         <div id="main" class="tt-slider-karma-custom-jquery-1">
-            <div class="main-area">
+         <div id="main" class="tt-slider-">
+			       <div class="main-area">
+
+
+
+
+
+
               <!-- ////////////////////////////////////////////////////////// -->
               <!-- ***************** - Content Start Here - ***************** -->
               <!-- ////////////////////////////////////////////////////////// -->
-               <div class="jquery1-slider-wrap flexslider">
-                  <ul class="slides">
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider11.jpg" width="1204" height="556" alt="" />
-                    </li>
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider12.jpg" width="1204" height="556" alt="" />
-                    </li>
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider13.jpg" width="1204" height="556" alt="" />
-                    </li>
-                  </ul>
-               </div><!-- END jquery1-slider-wrap -->
-<br>
-               <main role="main" id="content" class="content_full_width" style="width:980px">
 
 
-                 <h6 class="heading-horizontal" style="margin:50px 0 50px 0;"><span>Haber ve Duyurular</span></h6>
-               <div class="blog-posts-shortcode-outer-wrap">
-                  <div class="one_half tt-column">
-                     <img id="haber1resim" alt="" />
-                     <h4 id="haber1baslik"></h4>
-                     <p id="haber1ozet"></p>
-                     <a id="haber1url" href="#">Devamı</a>
-                  </div>
-                  <div class="one_half_last tt-column">
+              <!-- ***************** - Breadcrumbs Start Here - ***************** -->
+                  <div class="tools">
+					   <span class="tools-top"></span>
+					   <div class="frame">
+						  <!-- <h1>Archive for 'Events'</h1> -->
+						  <h1><a href="index.html">Yönetim</a><span class='current_crumb'>&nbsp;&nbsp;İnsan Kaynakları </span></h1>
+						  <form role="search" method="get" action="http://truethemesdemo.net/_HTML/Karma/template-blog.html" class="search-form">
+							 <fieldset>
+								<label for="s">Search this website</label>
+								<span class="text">
+								<input type="text" name="s" class="s" id="s" value="Search" onfocus="this.value=(this.value=='Search') ? '' : this.value;" onblur="this.value=(this.value=='') ? 'Search' : this.value;" />
+								<input type="submit" value="search" class="searchsubmit" />
+								</span>
+							 </fieldset>
+						  </form>
+					   </div><!-- END frame -->
 
-                     <img id="haber2resim" alt="" />
-                     <h4 id="haber2baslik"></h4>
-                     <p id="haber2ozet"></p>
-                     <a id="haber2url" href="#">Devamı</a>
-                  </div>
-               </div>
+					   <span class="tools-bottom"></span>
+					</div><!-- END tools -->
 
-               <br class="clear" />
+					<main role="main" id="content" class="content_blog">
+					<article class="blog_wrap  post-9473 post type-post status-publish format-standard hentry category-events tag-design tag-responsive tag-retina tag-themeforest tag-truethemes tag-wordpress">
+					   <div class="post_title">
+						  <h2><a href="#" title="">İnsan Kaynakları</a></h2>
+						  <a href="#" title="Posts by TrueThemes" rel="author"></a>
+					   </div><!-- END post_title -->
 
-             </div>
+					   <div class="post_content">
+						  <div class="modern_img_frame tt-blog-featured">
+							 <div class="img-preload">
+							 	<a href='#' title='' class='attachment-fadeIn'><img src='img/insankaynak.png' width='538' height='218' alt='' /></a>
+							 </div><!-- END img-preload -->
+						  </div><!-- END post_thumb -->
+
+
+						  </div><!-- END post_content -->
+
+					   </article><!-- END blog_wrap -->
+
 
 
 
@@ -114,7 +122,9 @@
 
 
                </main><!-- END main #content -->
+               <!-- END sidebar -->
             </div><!-- END main-area -->
+
 
          <div id="footer-top">&nbsp;</div>
       </div><!-- END main -->
@@ -123,11 +133,14 @@
 
 
          <!-- ***************** - Footer Starts Here - ***************** -->
-         <div class="footer"><?php include('footer.html');?></div>
+                 <div class="footer"><?php include('footer.html');?></div>
 
 
 </div><!-- END wrapper -->
 </div><!-- END tt-layout -->
+
+
+
 
 <!-- ***************** - JavaScript Starts Here - ***************** -->
 <script type="text/javascript" src="js/custom-main.js"></script>

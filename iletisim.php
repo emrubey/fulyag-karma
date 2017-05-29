@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta charset="UTF-8">
 <script type="text/javascript" src="js/jquery.js"></script>
-<title>İzmir İngiliz Kültür Okulları</title>
+<title>Fulyag</title>
 
 
 <!-- RSS -->
@@ -41,53 +41,6 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
-<!--[if IE 9]>
-<style media="screen">
-#footer,
-.header-holder
-{
-behavior: url(js/PIE/PIE.htc);
-}
-</style>
-<![endif]-->
-<!--[if lte IE 8]>
-<script type='text/javascript' src='js/html5shiv.js'></script>
-<style media="screen">
-/* uncomment for IE8 rounded corners
-#menu-main-nav .drop ul a,
-#menu-main-nav .drop,
-#menu-main-nav ul.sub-menu,
-#menu-main-nav .drop .c,
-#menu-main-nav li.parent, */
-#footer,
-.header-holder,
-#horizontal_nav ul li,
-#horizontal_nav ul a,
-#tt-gallery-nav li,
-#tt-gallery-nav a,
-ul.tabset li,
-ul.tabset a,
-.karma-pages a,
-.karma-pages span,
-.wp-pagenavi a,
-.wp-pagenavi span,
-.post_date,
-.post_comments,
-.ka_button,
-.flex-control-paging li a,
-.colored_box,
-.tools,
-.karma_notify
-.opener,
-.callout_button,
-.testimonials {
-behavior: url(js/PIE/PIE.htc);
-}
-</style>
-<![endif]-->
-<!--[if IE]>
-<link rel="stylesheet" href="css/_internet_explorer.css" media="screen"/>
-<![endif]-->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -145,61 +98,26 @@ behavior: url(js/PIE/PIE.htc);
 						  <a href="#" title="Posts by TrueThemes" rel="author"></a>
 					   </div><!-- END post_title -->
              <div id="google-map-wrap">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.526520051353!2d27.246443314880146!3d38.47549097963792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b97c8c747a0a83%3A0xd3cd21630ef35d6e!2sErzene+Mahallesi%2C+113%2F15.+Sk.%2C+35040+Bornova%2F%C4%B0zmir!5e0!3m2!1str!2str!4v1490710667380" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
-       </div>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3121.3657647783184!2d27.02615331488186!3d38.52533597962967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd059c6a454c7%3A0x221f48f31ea84147!2zRnVseWHEnyBQZXRyb2wgQS7Fni4!5e0!3m2!1str!2str!4v1495540680979" width="600" height="150" frameborder="0" style="border:0" allowfullscreen></iframe></ul>
+   </div>
 <!-- END post_content --> <main role="main" id="content" class="content_full_width">
     <br class="clear" />
 
     <br class="clear" />
     <div class="one_fourth tt-column">
 <!-- ***************** - START Contact Form - ***************** -->
-<div class="iphorm-outer">
-  <div class="" style="background-color:#406781" >
-     <h3 style="color:#ffffff">Join Mailing List</h3>
-     <div id="mc_signup">
-        <form method="post" action="#mc_signup" id="mc_signup_form">
-           <input type="hidden" id="mc_submit_type" name="mc_submit_type" value="html" />
-           <input type="hidden" name="mcsf_action" value="mc_submit_signup_form" />
-           <input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="0c5c83c82c" />
-           <div class="mc_merge_var">
-              <label for="mc_mv_FNAME" class="mc_var_label mc_header mc_header_text">Your name</label>
-              <input type="text" size="18" placeholder="" name="mc_mv_FNAME" id="mc_mv_FNAME" class="mc_input"/>
-           </div><!-- /mc_merge_var -->
 
-
-           <div class="mc_merge_var">
-              <label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">Email Address<span class="mc_required">*</span></label>
-              <input type="text" size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input"/>
-           </div><!-- /mc_merge_var -->
-
-
-
-
-           <div class="mc_signup_submit">
-               <button id="onkayitsubmit" style ="float:right;" class="ka_button medium_button medium_cherry"><b>Kaydol</b></button>
-           </div><!-- /mc_signup_submit -->
-     </div><!-- /mc_form_inside -->
-     </form><!-- /mc_signup_form -->
-  </div><!-- /mc_signup_container -->
-</div>
 <!-- ***************** - END Contact Form - ***************** -->
     </div><!-- end two_thirds tt-column -->
     <div class="one_third_last tt-column">
-       <h3>Evka 3:</h3>
+       <h3>Ulukent:</h3>
        <ul class="tt-business-contact">
-          <li><a href="tel://123-456-7890" class="tt-biz-phone">0232..</a></li>
-          <li><a href="mailto:#" class="tt-biz-email">admin@izmiringilizkulturokullari.com</a></li>
-          <li><a href="http://goo.gl/maps/996Zi" class="tt-biz-directions" target="_blank">Yol Tarifi Alın</a></li>
+          <li><a href="tel://0 (232) 461 60 81" class="tt-biz-phone">0 (232) 461 60 81</a></li>
+          <li><a href="mailto:#" class="tt-biz-email">info@fulyag.com</a></li>
+          <li><a href="https://www.google.com/maps/place/Fulya%C4%9F+Petrol+A.%C5%9E./@38.5253402,27.0261533,17z/data=!3m1!4b1!4m5!3m4!1s0x14bbd059c6a454c7:0x221f48f31ea84147!8m2!3d38.525336!4d27.028342?hl=en" class="tt-biz-directions" target="_blank">Yol Tarifi Alın</a></li>
        </ul>
     </div>
-    <div class="one_third_last tt-column">
-       <h3>Yeşilova:</h3>
-       <ul class="tt-business-contact">
-          <li><a href="tel://123-456-7890" class="tt-biz-phone">0232..</a></li>
-          <li><a href="mailto:#" class="tt-biz-email">admin@izmiringilizkulturokullari.com</a></li>
-          <li><a href="http://goo.gl/maps/996Zi" class="tt-biz-directions" target="_blank">Yol Tarifi Alın</a></li>
-       </ul>
-    </div>
+
     <br class="clear" />
 
 

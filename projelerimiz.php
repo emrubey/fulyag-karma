@@ -5,8 +5,6 @@
 <!--[if !IE]><!-->
 <html lang="en-US">
 <!--<![endif]-->
-
-
 <!-- Mirrored from truethemesdemo.net/_HTML/Karma/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Mar 2017 08:21:22 GMT -->
 <head>
 <!-- un-comment and delete 2nd meta below to disable zoom (not cool)
@@ -53,68 +51,105 @@
 </script>
 </head>
 <body>
-<?php include('scripts.php');?></div>
-   <div id="tt-wide-layout" class="content-style-default" >
+   <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">
         <div class="header"><?php include('header.html');?></div>
 
          <!-- ***************** - Main Content Area - ***************** -->
-         <div id="main" class="tt-slider-karma-custom-jquery-1">
-            <div class="main-area">
+         <div id="main" class="">
+			       <div class="main-area">
+
+
+
+
+
+
               <!-- ////////////////////////////////////////////////////////// -->
               <!-- ***************** - Content Start Here - ***************** -->
               <!-- ////////////////////////////////////////////////////////// -->
-               <div class="jquery1-slider-wrap flexslider">
-                  <ul class="slides">
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider11.jpg" width="1204" height="556" alt="" />
-                    </li>
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider12.jpg" width="1204" height="556" alt="" />
-                    </li>
-                    <li class="jqslider karma-slider-normal-image">
-                          <img src="img/slider/slider13.jpg" width="1204" height="556" alt="" />
-                    </li>
-                  </ul>
-               </div><!-- END jquery1-slider-wrap -->
-<br>
-               <main role="main" id="content" class="content_full_width" style="width:980px">
 
 
-                 <h6 class="heading-horizontal" style="margin:50px 0 50px 0;"><span>Haber ve Duyurular</span></h6>
-               <div class="blog-posts-shortcode-outer-wrap">
-                  <div class="one_half tt-column">
-                     <img id="haber1resim" alt="" />
-                     <h4 id="haber1baslik"></h4>
-                     <p id="haber1ozet"></p>
-                     <a id="haber1url" href="#">Devamı</a>
+              <!-- ***************** - Breadcrumbs Start Here - ***************** -->
+
+                  <div class="tools">
+					   <span class="tools-top"></span>
+					   <div class="frame">
+						  <!-- <h1>Archive for 'Events'</h1> -->
+						  <h1><a href="index.html">Kurumsal</a><span class='current_crumb'>&nbsp;&nbsp;Projelerimiz </span></h1>
+						  <form role="search" method="get" action="http://truethemesdemo.net/_HTML/Karma/template-blog.html" class="search-form">
+                <fieldset>
+                   <label for="s">Search this website</label>
+                   <span class="text">
+                   <input type="text" name="s" class="s" id="s" value="Search" onfocus="this.value=(this.value=='Search') ? '' : this.value;" onblur="this.value=(this.value=='') ? 'Search' : this.value;" />
+                   <input type="submit" value="search" class="searchsubmit" />
+                   </span>
+                </fieldset>
+						  </form>
+					   </div><!-- END frame -->
+
+					   <span class="tools-bottom"></span>
+					</div><!-- END tools -->
+
+					<main role="main" id="content" class="content_full_width">
+					   <div class="post_title">
+						  <h2><a href="#" title=""></a></h2>
+						  <a href="#" title="Posts by TrueThemes" rel="author"></a>
+					   </div><!-- END post_title -->
+             <h6 class="heading-horizontal" style="margin:30px 0 60px 0;"><span>Projelerimiz</span></h6>
+             <ul class="accordion accordion1">
+               <li>
+                  <a href="#" class="opener"><strong>Proje Baslik</strong></a>
+                  <div class="slide-holder">
+                     <div class="slide">
+                        <div class="">
+                           <h4></h4>
+                           <p>Hazırlanıyor.</p>
+                        </div>
+
+                        <br class="clear" />
+                     </div>
                   </div>
-                  <div class="one_half_last tt-column">
+               </li>
 
-                     <img id="haber2resim" alt="" />
-                     <h4 id="haber2baslik"></h4>
-                     <p id="haber2ozet"></p>
-                     <a id="haber2url" href="#">Devamı</a>
+
+ <li>
+                  <a href="#" class="opener"><strong>Proje 2</strong></a>
+                  <div class="slide-holder">
+                     <div class="slide">
+                        <div class="">
+                           <h4></h4>
+                           <p>Hazırlanıyor.</p>
+                        </div>
+
+                        <br class="clear" />
+                     </div>
                   </div>
-               </div>
+               </li>
 
-               <br class="clear" />
+<li>
+                  <a href="#" class="opener"><strong>Proje 3</strong></a>
+                  <div class="slide-holder">
+                     <div class="slide">
+                        <div class="">
+                           <h4></h4>
+                           <p>Hazırlanıyor.</p>
+                        </div>
 
-             </div>
+                        <br class="clear" />
+                     </div>
+                  </div>
+               </li>
 
 
+             </ul>
 
 
-                  <!-- ////////////////////////////////////////////////////////// -->
-                  <!-- ***************** - Content Ends Here - ****************** -->
-                  <!-- ////////////////////////////////////////////////////////// -->
-
-
-
-
+             <script type='text/javascript'>jQuery(document).ready(function() {jQuery( ".accordion1" ).accordion({ active: 1, autoHeight: false, heightStyle: "content", header: ".opener", collapsible: true, event: "click"});});</script>
 
                </main><!-- END main #content -->
+               <!-- END sidebar -->
             </div><!-- END main-area -->
+
 
          <div id="footer-top">&nbsp;</div>
       </div><!-- END main -->
@@ -123,11 +158,14 @@
 
 
          <!-- ***************** - Footer Starts Here - ***************** -->
-         <div class="footer"><?php include('footer.html');?></div>
+                 <div class="footer"><?php include('footer.html');?></div>
 
 
 </div><!-- END wrapper -->
 </div><!-- END tt-layout -->
+
+
+
 
 <!-- ***************** - JavaScript Starts Here - ***************** -->
 <script type="text/javascript" src="js/custom-main.js"></script>
