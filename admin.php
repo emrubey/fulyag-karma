@@ -52,21 +52,6 @@
 </script>
 </head>
 <body>
-    include 'DBO/BusinessTier.php';
-    $BT = new BusinessTier();
-    $sorgu = $BT->getAllBrands();
-    while ($row = mysql_fetch_array($sorgu)){
-      echo '<div>
-                <p> '.$row['id'].'</p>
-                <p> '.$row['name'].'</p>
-                <p> '.$row['logo_path'].'</p>
-                <p> '.$row['description'].'</p>
-            </div>';
-    }
-
-    //$BT->InsertCategory('cat2');
-    //$BT->insertProducts('prd1', 1, 1, 'desc1', 'image path');
-?>
    <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">
         <div class="header"><?php include('header.html');?></div>
@@ -124,6 +109,7 @@
                         <div class="col-md-4">
                         <select class="from-control" name="selectCat" style="margin-left:30px">
                           <?php
+                            include 'DBO/BusinessTier.php';
                             $sql = $BT->getAllCategories();
                             while($row = mysql_fetch_array($sql))
                             {
