@@ -65,17 +65,32 @@
 
           <h4 class="heading-horizontal" style="margin:30px 0 30px 0;"><span></span></h4>
         <div class="row">
-          <div class=" tt-column col-md-4">
-					   <div class="modern_img_frame modern_square">
-						  <div class="img-preload"><img src='../../../s3.truethemes.net/theme-xml-content/wp-karma-4/190x180/190x180-john-doe.png' alt='' class="attachment-fadeIn" /></div>
-					   </div>
-					   <h4 class="team-member-name">Ürün adı</h4>
-					   <p class="team-member-title">Alt başlık</p>
-					   <p>aciklama</p>
-					</div>
 
+          <?php
+            include 'DBO/BusinessTier.php';
+            $BT = new BusinessTier();
 
-					</div>
+            $sql = $BT->getAllProducts();
+            $html = '';
+            while($row = mysql_fetch_array($sql)) {
+              $productName = $row['name'];
+              $productDesc = $row['description'];
+              $logoPath    = 'img/markalar/3m.png'; // $row['image_path'];
+
+              $html .=
+                "<div class=' tt-column col-md-4'>" .
+                  "<div class='modern_img_frame modern_square'>" .
+                    "<div class='img-preload'><img src='$logoPath' alt='' class='attachment-fadeIn' /></div>" .
+                  "</div>" .
+                  "<h4 class='team-member-name'>$productName</h4>" .
+                  "<p>$productDesc</p>" .
+                "</div>";
+            }
+            echo $html;
+            ?>
+
+				</div>
+
 					<br class="clear" />
                <!-- END sidebar -->
             </div><!-- END main-area -->

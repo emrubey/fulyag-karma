@@ -52,6 +52,22 @@
 </script>
 </head>
 <body>
+  <?php
+    include 'DBO/BusinessTier.php';
+    $BT = new BusinessTier();
+    $sorgu = $BT->getAllBrands();
+    while ($row = mysql_fetch_array($sorgu)){
+      echo '<div>
+                <p> '.$row['id'].'</p>
+                <p> '.$row['name'].'</p>
+                <p> '.$row['logo_path'].'</p>
+                <p> '.$row['description'].'</p>
+            </div>';
+    }
+
+    //$BT->InsertCategory('cat2');
+    //$BT->insertProducts('prd1', 1, 1, 'desc1', 'image path');
+?>
    <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">
         <div class="header"><?php include('header.html');?></div>
@@ -61,12 +77,6 @@
 			       <div class="main-area">
                   <div class="tools">
 					   <span class="tools-top"></span>
-					   <div class="frame">
-						  <!-- <h1>Archive for 'Events'</h1> -->
-						  <h1><a href="index.html">Referasnlarımız </a><span class='current_crumb'>&nbsp;&nbsp; </span></h1>
-						  <form role="search" method="get" action="http://truethemesdemo.net/_HTML/Karma/template-blog.html" class="search-form">
-							</form>
-					   </div><!-- END frame -->
 
 					   <span class="tools-bottom"></span>
 					</div><!-- END tools -->
@@ -77,39 +87,27 @@
              </div><!-- END post_title -->
 
 
-             <?php
-               include 'DBO/BusinessTier.php';
-               $BT = new BusinessTier();
-
-               $sql = $BT->getAllReferences();
-               $html = '';
-               while($row = mysql_fetch_array($sql))
-               {
-                   $name = $row['name'];
-                   $imagePath = 'img/markalar/3m.png'; // $row['image_path'];
-
-                   $html .=
-                    "<div class='one_fourth '>" .
-                      "<div class='modern_three_col_large' style='height:200px'>" .
-                        "<a href='$imagePath' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>" .
-                          "<div class='lightbox-zoom zoom-3' style='position:absolute; display: none;'>&nbsp;</div>" .
-                          "<img class='tt-fadein' src='$imagePath' alt='' />" .
-                        "</a>" .
-                      "</div>" .
-                      "<div class='portfolio_content'>" .
-                         "<h3>$name</h3>" .
-                      "</div>".
-                   "</div>";
-               }
-               echo $html;
-             ?>
-
-
+             <div class="tabs-area">
+                <div id="tab-1" class="tab-box">
+                  <form action="add_brand.php" method="get" id="addBrandForm">
+                      <div style="margin-top:-10px">
+                           <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Marka Adı:</h4></label>
+                           <input name="brandName" type="text" class="form-control" id="brandName">
+                           <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Marka Açıklaması:</h4></label>
+                           <input name="brandDescription" type="text" class="form-control" id="brandDescription">
+                           <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
+                           <input name="productImage" type="file" id="productImage">
+                     </div>
+                     <div>
+                       <button type="submit" name="addBrand">Marka Ekle</button>
+                     </div>
+                  </form>
+                </div>
+             </div>
 
                </main><!-- END main #content -->
                <!-- END sidebar -->
             </div><!-- END main-area -->
-
          <div id="footer-top">&nbsp;</div>
       </div><!-- END main -->
 
@@ -120,9 +118,6 @@
 
 </div><!-- END wrapper -->
 </div><!-- END tt-layout -->
-
-
-
 
 <!-- ***************** - JavaScript Starts Here - ***************** -->
 <script type="text/javascript" src="js/custom-main.js"></script>

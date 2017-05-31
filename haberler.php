@@ -65,7 +65,7 @@
                   <main class="content_full_width" style="width:1000px">
 
                     <h6 class="heading-horizontal" style="margin:50px 0 50px 0;"><span>En Son Haberler</span></h6>
-                  <div class="blog-posts-shortcode-outer-wrap">
+                  <div class="blog-posts-shortcode-outer-wrap">asd
                      <div class="one_half tt-column">
                         <img id="haber1resim" alt="" height="234" />
                         <h4 id="haber1baslik"></h4>
@@ -81,20 +81,6 @@
                         <a id="haber2url" href="#">Devamı</a>
                      </div>
                   </div>
-
-
-                  <br class="clear" />
-                  <br class="clear" />
-                  <h6 class="heading-horizontal" style="margin:50px 0 50px 0;"><span>Bütün Haberler</span></h6>
-                  <div id="haberListesi" class="blog-posts-shortcode-outer-wrap">
-
-                  </div>
-                  <br class="clear" />
-
-                  <br class="clear" />
-
-                    <br class="clear" />
-                    <div class="hr_gap" style="height:80px;"></div>
                   <!-- ////////////////////////////////////////////////////////// -->
                   <!-- ***************** - Content Ends Here - ****************** -->
                   <!-- ////////////////////////////////////////////////////////// -->

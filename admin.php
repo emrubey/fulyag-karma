@@ -52,6 +52,21 @@
 </script>
 </head>
 <body>
+    include 'DBO/BusinessTier.php';
+    $BT = new BusinessTier();
+    $sorgu = $BT->getAllBrands();
+    while ($row = mysql_fetch_array($sorgu)){
+      echo '<div>
+                <p> '.$row['id'].'</p>
+                <p> '.$row['name'].'</p>
+                <p> '.$row['logo_path'].'</p>
+                <p> '.$row['description'].'</p>
+            </div>';
+    }
+
+    //$BT->InsertCategory('cat2');
+    //$BT->insertProducts('prd1', 1, 1, 'desc1', 'image path');
+?>
    <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">
         <div class="header"><?php include('header.html');?></div>
@@ -75,65 +90,102 @@
                 <ul class="tabset">
                    <li><a href="#tab-1" class="tab"><span>Ürün Ekleme</span></a></li>
                    <li><a href="#tab-2" class="tab"><span>Haber Ekleme</span></a></li>
+                   <li><a href="#tab-3" class="tab"><span>Referans Ekleme</span></a></li>
                 </ul>
 
                 <div id="tab-1" class="tab-box">
-                
+                  <form action="add_product.php" method="post" id="addProductForm" enctype="multipart/form-data">
 
                   <div class="form-group row"  style="margin-top:-10px">
                         <div class="col-md-4">
                         <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Marka Seç:</h4></label></div>
                         <div class="col-md-4">
-                        <select class="from-control" name="kampus" style="margin-left:30px">
-                          <option value="kategori1">marka1ismi</option>
-                          <option value="kategori2">marka2</option>
+                        <select class="from-control" name="selectBrand" style="margin-left:30px">
+                        <?php
+                          $sql = $BT->getAllBrands();
+                          while($row = mysql_fetch_array($sql))
+                          {
+                              $id = $row['id'];
+                              $name = $row['name'];
+                              $html .= "<option value='$id' id='$id'>$name</option>";
+                          }
+                          echo $html;
+                        ?>
                         </select></div>
                         <div class="col-md-4" align="right">
-                        <button type="button" name="button">Marka Ekle</button>
+                        <a href="admin_add_brand.php">
+                          <button type="button" name="button">Marka Ekle</button>
+                        </a>
                       </div>
                     </div>
                   <div class="form-group row"  style="margin-top:-10px">
                         <div class="col-md-4">
                         <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Kategori Seç:</h4></label></div>
                         <div class="col-md-4">
-                        <select class="from-control" name="kampus" style="margin-left:30px">
-                          <option value="kategori1">kategori1ismi</option>
-                          <option value="kategori2">kategori2</option>
+                        <select class="from-control" name="selectCat" style="margin-left:30px">
+                          <?php
+                            $sql = $BT->getAllCategories();
+                            while($row = mysql_fetch_array($sql))
+                            {
+                                $catId = $row['id'];
+                                $catName = $row['name'];
+                                $catHtml .= "<option value='$catId' id='$catId'>$catName</option>";
+                            }
+                            echo $catHtml;
+                          ?>
                         </select></div>
                         <div class="col-md-4" align="right">
-                        <button type="button" name="button">Kategori Ekle</button>
+                        <a href="admin_add_category.php">
+                          <button type="button" name="button">Kategori Ekle</button>
+                        </a>
                       </div>
                     </div>
-                      <div  style="margin-top:-10px">
-                            <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Ürün Adı:</h4></label>
-                            <input name="urun_adi" type="text" class="form-control" id="product_name">
+                      <div style="margin-top:-10px">
+                           <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Ürün Adı:</h4></label>
+                           <input name="productName" type="text" class="form-control" id="productName">
                            <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Ürün Açıklaması:</h4></label>
-                           <input name="urun_aciklama" type="text" class="form-control" id="product_description">
+                           <input name="productDescription" type="text" class="form-control" id="productDescription">
                            <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
-                           <input name="resim" type="file" id="product_image">
+                           <input name="productImage" type="file" id="productImage">
                      </div>
+                     <div>
+                       <button type="submit" name="addProduct">Ürün Ekle</button>
+                     </div>
+                  </form>
                 </div>
                 <div id="tab-2" class="tab-box">
-                  <div  style="margin-top:-10px">
-                        <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Haber Adı:</h4></label>
-                        <input name="haber_adi" type="text" class="form-control" id="news_name">
-                       <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Haber Metni:</h4></label>
-                       <input name="haber_aciklama" type="text" class="form-control" id="news_description">
-                       <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
-                       <input name="resim" type="file" id="news_image">
-                 </div>
+                  <form action="add_news.php" method="get" id="addNewsForm">
+                    <div  style="margin-top:-10px">
+                         <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Haber Adı:</h4></label>
+                         <input name="newsName" type="text" class="form-control" id="newsName">
+                         <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Haber Metni:</h4></label>
+                         <input name="newsDescription" type="text" class="form-control" id="newsDescription">
+                         <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
+                         <input name="productImage" type="file" id="productImage">
+                   </div>
+                   <div>
+                     <button type="submit" name="addNews">Haber Ekle</button>
+                   </div>
+               </form>
+                </div>
+
+                <div id="tab-3" class="tab-box">
+                  <form action="add_reference.php" method="get" id="addReferenceForm">
+                    <div  style="margin-top:-10px">
+                         <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Referans Adı:</h4></label>
+                         <input name="referenceName" type="text" class="form-control" id="referenceName">
+                         <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Referans Detayı:</h4></label>
+                         <input name="referenceDescription" type="text" class="form-control" id="referenceDescription">
+                         <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
+                         <input name="productImage" type="file" id="productImage">
+                   </div>
+                   <div>
+                     <button type="submit" name="addReference">Referans Ekle</button>
+                   </div>
+                </form>
                 </div>
              </div>
-
-
-
-
-
-
-
-
-
-               </main><!-- END main #content -->
+             </main><!-- END main #content -->
                <!-- END sidebar -->
             </div><!-- END main-area -->
          <div id="footer-top">&nbsp;</div>

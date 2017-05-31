@@ -76,91 +76,32 @@
               <a href="" title="Posts by TrueThemes" rel="author"></a>
              </div><!-- END post_title -->
 
-             <div class="one_fourth ">
-                <div class="modern_three_col_large" style="height:200px">
-                      <a href='img/markalar/3m.png' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
-                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
-                         <img class='tt-fadein' src='img/markalar/3m.png'alt='' />
-                      </a>
-                </div><!-- END image_frame -->
-                <div class="portfolio_content">
-                   <h3>3M</h3>
-                </div><!-- END portfolio_content -->
-             </div><!-- END column -->
-             <div class="one_fourth ">
-                <div class="modern_three_col_large" style="height:200px;">
-                      <a href='img/markalar/addinol-logo.jpg' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
-                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
-                         <img class='tt-fadein' src='img/markalar/addinol-logo.jpg'alt='' style="margin-top:50px" />
-                      </a>
-                </div><!-- END image_frame -->
-                <div class="portfolio_content">
-                   <h3>ADDINOL</h3>
-                </div><!-- END portfolio_content -->
-             </div><!-- END column -->
-             <div class="one_fourth ">
-                <div class="modern_three_col_large" style="height:200px">
-                      <a href='img/markalar/curtis.png' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
-                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
-                         <img class='tt-fadein' src='img/markalar/curtis.png'alt='' />
-                      </a>
-                </div><!-- END image_frame -->
-                <div class="portfolio_content">
-                   <h3>Curtis Systems</h3>
-                </div><!-- END portfolio_content -->
-             </div><!-- END column -->
-             <div class="one_fourth ">
-                <div class="modern_three_col_large" style="height:200px">
-                      <a href='img/markalar/le logo.jpg' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
-                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
-                         <img class='tt-fadein' src='img/markalar/le logo.jpg'alt=''  />
-                      </a>
-                </div><!-- END image_frame -->
-                <div class="portfolio_content">
-                   <h3>LE</h3>
-                </div><!-- END portfolio_content -->
-             </div><!-- END column -->
-             <div class="one_fourth ">
-                <div class="modern_three_col_large" style="height:200px">
-                      <a href='img/markalar/logowilke.png' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
-                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
-                         <img class='tt-fadein' src='img/markalar/logowilke.png'alt='' style="margin-top:50px"/>
-                      </a>
-                </div><!-- END image_frame -->
-                <div class="portfolio_content">
-                   <h3>WILKE</h3>
-                </div><!-- END portfolio_content -->
-             </div><!-- END column -->
+               <?php
+                 include 'DBO/BusinessTier.php';
+                 $BT = new BusinessTier();
 
-             <div class="one_fourth ">
-                <div class="modern_three_col_large" style="height:200px">
-                      <a href='img/markalar/scotch-brite.jpg' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
-                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
-                         <img class='tt-fadein' src='img/markalar/scotch-brite.jpg'alt='' />
-                      </a>
-                </div><!-- END image_frame -->
-                <div class="portfolio_content">
-                   <h3>Scotch Bride</h3>
-                </div><!-- END portfolio_content -->
-             </div><!-- END column -->
-             <div class="one_fourth ">
-                <div class="modern_three_col_large" style="height:200px">
-                      <a href='img/markalar/triboline-logo.jpg' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>
-                         <div class="lightbox-zoom zoom-3" style="position:absolute; display: none;">&nbsp;</div>
-                         <img class='tt-fadein' src='img/markalar/triboline-logo.jpg'alt='' style="margin-top:70px"  />
-                      </a>
-                </div><!-- END image_frame -->
-                <div class="portfolio_content">
-                   <h3>TRİBOLİNE</h3>
-                </div><!-- END portfolio_content -->
-             </div><!-- END column -->
+                 $sql = $BT->getAllBrands();
+                 $html = '';
+                 while($row = mysql_fetch_array($sql))
+                 {
+                     $name = $row['name'];
+                     $imagePath = 'img/markalar/3m.png'; // $row['logo_path'];
 
-
-
-
-
-
-
+                     $html .=
+                      "<div class='one_fourth '>" .
+                        "<div class='modern_three_col_large' style='height:200px'>" .
+                          "<a href='$imagePath' class='attachment-fadeIn' data-gal='prettyPhoto' title=''>" .
+                            "<div class='lightbox-zoom zoom-3' style='position:absolute; display: none;'>&nbsp;</div>" .
+                            "<img class='tt-fadein' src='$imagePath' alt='' />" .
+                          "</a>" .
+                        "</div>" .
+                        "<div class='portfolio_content'>" .
+                           "<h3>$name</h3>" .
+                        "</div>".
+                     "</div>";
+                 }
+                 echo $html;
+               ?>
 
 
 
