@@ -52,6 +52,11 @@
 </script>
 </head>
 <body>
+  <?php
+    include 'DBO/BusinessTier.php';
+    $BT = new BusinessTier();
+
+?>
    <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">
         <div class="header"><?php include('header.html');?></div>
@@ -109,7 +114,6 @@
                         <div class="col-md-4">
                         <select class="from-control" name="selectCat" style="margin-left:30px">
                           <?php
-                            include 'DBO/BusinessTier.php';
                             $sql = $BT->getAllCategories();
                             while($row = mysql_fetch_array($sql))
                             {
