@@ -3,8 +3,6 @@
   $BT = new BusinessTier();
 
   $categoryName					= $_GET['categoryName'];
-  //$handle = fopen($_FILES["productImage"]["tmp_name"], 'r');
-
 
   if (categoryName != "") {
       $BT->insertCategory($categoryName);

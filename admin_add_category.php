@@ -55,18 +55,6 @@
   <?php
     include 'DBO/BusinessTier.php';
     $BT = new BusinessTier();
-    $sorgu = $BT->getAllBrands();
-    while ($row = mysql_fetch_array($sorgu)){
-      echo '<div>
-                <p> '.$row['id'].'</p>
-                <p> '.$row['name'].'</p>
-                <p> '.$row['logo_path'].'</p>
-                <p> '.$row['description'].'</p>
-            </div>';
-    }
-
-    //$BT->InsertCategory('cat2');
-    //$BT->insertProducts('prd1', 1, 1, 'desc1', 'image path');
 ?>
    <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">

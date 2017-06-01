@@ -75,7 +75,7 @@
             while($row = mysql_fetch_array($sql)) {
               $productName = $row['name'];
               $productDesc = $row['description'];
-              $logoPath    = 'img/markalar/3m.png'; // $row['image_path'];
+              $logoPath    = "img/deneme/". $row['image_path'];
 
               $html .=
                 "<div class=' tt-column col-md-4'>" .

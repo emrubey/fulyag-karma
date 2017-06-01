@@ -33,24 +33,20 @@
   		}
 	}
 
-
-
   $brandId            = $_POST['selectBrand'];
   $categoryId         = $_POST['selectCat'];
 	$productName        = $_POST['productName'];
   $productDescription = $_POST['productDescription'];
-  $productImage       = 'imagePath';
-  //$handle = fopen($_FILES["productImage"]["tmp_name"], 'r');
+  $productImage       = basename( $_FILES["productImage"]["name"]);
 
 
   if ($brandId != "" && $categoryId != "" &&
-      $productName != "" && $productDescription != "" &&
-      $productImage != "") {
+      $productName != "" && $productDescription != "") {
         $BT->insertProducts($productName, $brandId, $categoryId,
                             $productDescription, $productImage);
 
         // sayfaya geri yönlendirme
-        //header('Location: admin.php?msg=success');
-        //exit;
+        header('Location: admin.php?msg=success');
+        exit;
       }
 ?>

@@ -55,18 +55,6 @@
   <?php
     include 'DBO/BusinessTier.php';
     $BT = new BusinessTier();
-    $sorgu = $BT->getAllBrands();
-    while ($row = mysql_fetch_array($sorgu)){
-      echo '<div>
-                <p> '.$row['id'].'</p>
-                <p> '.$row['name'].'</p>
-                <p> '.$row['logo_path'].'</p>
-                <p> '.$row['description'].'</p>
-            </div>';
-    }
-
-    //$BT->InsertCategory('cat2');
-    //$BT->insertProducts('prd1', 1, 1, 'desc1', 'image path');
 ?>
    <div id="tt-wide-layout" class="content-style-default">
       <div id="wrapper">
@@ -89,14 +77,14 @@
 
              <div class="tabs-area">
                 <div id="tab-1" class="tab-box">
-                  <form action="add_brand.php" method="get" id="addBrandForm">
+                  <form action="add_brand.php" method="post" id="addBrandForm" enctype="multipart/form-data">
                       <div style="margin-top:-10px">
                            <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Marka Adı:</h4></label>
                            <input name="brandName" type="text" class="form-control" id="brandName">
                            <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Marka Açıklaması:</h4></label>
                            <input name="brandDescription" type="text" class="form-control" id="brandDescription">
                            <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
-                           <input name="productImage" type="file" id="productImage">
+                           <input name="brandImage" type="file" id="brandImage">
                      </div>
                      <div>
                        <button type="submit" name="addBrand">Marka Ekle</button>

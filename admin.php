@@ -144,14 +144,14 @@
                   </form>
                 </div>
                 <div id="tab-2" class="tab-box">
-                  <form action="add_news.php" method="get" id="addNewsForm">
+                  <form action="add_news.php" method="post" id="addNewsForm" enctype="multipart/form-data">
                     <div  style="margin-top:-10px">
                          <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Haber Adı:</h4></label>
                          <input name="newsName" type="text" class="form-control" id="newsName">
                          <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Haber Metni:</h4></label>
                          <input name="newsDescription" type="text" class="form-control" id="newsDescription">
                          <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
-                         <input name="productImage" type="file" id="productImage">
+                         <input name="newsImage" type="file" id="newsImage">
                    </div>
                    <div>
                      <button type="submit" name="addNews">Haber Ekle</button>
@@ -160,14 +160,14 @@
                 </div>
 
                 <div id="tab-3" class="tab-box">
-                  <form action="add_reference.php" method="get" id="addReferenceForm">
+                  <form action="add_reference.php" method="post" id="addReferenceForm" enctype="multipart/form-data">
                     <div  style="margin-top:-10px">
                          <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Referans Adı:</h4></label>
                          <input name="referenceName" type="text" class="form-control" id="referenceName">
                          <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Referans Detayı:</h4></label>
                          <input name="referenceDescription" type="text" class="form-control" id="referenceDescription">
                          <br>  <label for="name"><h4 style="font-size:20px; font-family:candara; font-style:italic;">Resim:</h4></label>
-                         <input name="productImage" type="file" id="productImage">
+                         <input name="referenceImage" type="file" id="referenceImage">
                    </div>
                    <div>
                      <button type="submit" name="addReference">Referans Ekle</button>
