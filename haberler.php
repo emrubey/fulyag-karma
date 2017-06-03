@@ -56,15 +56,36 @@
               <!-- ***************** - Content Start Here - ***************** -->
               <!-- ////////////////////////////////////////////////////////// -->
 
-               <div class="tools">
-               <span class="tools-top"></span>
-
-                  <span class="tools-bottom"></span>
-                  </div><!-- END tools -->
 
                   <main class="content_full_width" style="width:1000px">
 
+
                     <h6 class="heading-horizontal" style="margin:50px 0 50px 0;"><span>En Son Haberler</span></h6>
+
+                    <?php
+                      include 'DBO/BusinessTier.php';
+                      $BT = new BusinessTier();
+
+                      $sql = $BT->getAllNews();
+                      $html = '';
+                      while($row = mysql_fetch_array($sql))
+                      {
+                          $title = $row['title'];
+                          $description = $row['description'];
+                          $imagePath = "img/uploaded/" . $row['image_path'];
+
+                          $html .=
+                           "<div class='blog-posts-shortcode-outer-wrap'>" .
+                             "<div class='one_half tt-column'>" .
+                               "<img src='$imagePath' >" .
+                                 "<h2>'$title'</h2>" .
+                                 "<p>'$description'</p>" .
+                             "</div>" .
+                          "</div>";
+                      }
+                      echo $html;
+                    ?>
+<!--
                     <div class="blog-posts-shortcode-outer-wrap">
                      <div class="one_half tt-column">
                         <img id="haber1resim" alt="" height="234" />
@@ -80,7 +101,7 @@
                         <p id="haber2ozet"></p>
                         <a id="haber2url" href="#">Devamı</a>
                      </div>
-                  </div>
+                  </div>-->
                   <!-- ////////////////////////////////////////////////////////// -->
                   <!-- ***************** - Content Ends Here - ****************** -->
                   <!-- ////////////////////////////////////////////////////////// -->

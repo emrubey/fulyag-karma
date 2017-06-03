@@ -85,7 +85,7 @@
                  while($row = mysql_fetch_array($sql))
                  {
                      $name = $row['name'];
-                     $imagePath = "img/deneme/" . $row['logo_path'];
+                     $imagePath = "img/uploaded/" . $row['logo_path'];
 
                      $html .=
                       "<div class='one_fourth '>" .

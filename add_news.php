@@ -2,7 +2,7 @@
 	include 'DBO/BusinessTier.php';
   $BT = new BusinessTier();
 
-	$target_dir = "img/deneme/";
+	$target_dir = "img/uploaded/";
 	$target_file = $target_dir . basename($_FILES["newsImage"]['name']);
 	$uploadOk = 1;
 
